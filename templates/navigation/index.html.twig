@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello NavigationController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .nav {width: 100%; background: #f0f0f0; height: 5rem; display: flex; align-items: center; justify-content: center;}
+    .nav-ul {width: 800px; display:flex; justify-content: space-between; list-style-type: none;}
+    .nav-ul-li { color: blue; text-align: center; align-items: center}
+    .nav-ul-li:hover {background-color: lightgray; }
+    a {text-decoration: none;}
+</style>
+
+<nav class='nav'>
+    <ul class='nav-ul'>
+        <a href='' target='_blank' ><li class='nav-ul-li'>{{nav.accueil}}</li></a>
+        <a href='' target='_blank' ><li class='nav-ul-li'>{{nav.blog}}</li></a>
+        <a href='' target='_blank' ><li class='nav-ul-li'>{{nav.article}}</li></a>
+        <a href='' target='_blank' ><li class='nav-ul-li'>{{nav.categories}}</li></a>
+    </ul>
+</nav>
+
+
+{% endblock %}
